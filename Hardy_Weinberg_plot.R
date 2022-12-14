@@ -126,6 +126,8 @@ for(i in 1:100){
 
 
 
+## Histogram of phenotype data
+
 pericarp <- read.csv("pericarp_trimmed.csv")
 
 # pericarp <- drop_na(pericarp)
