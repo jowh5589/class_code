@@ -2,7 +2,9 @@ library(tidyverse)
 
 
 ########
-## Hardy-Weinberg Code by: 
+## Hardy-Weinberg Code by: Mark Ravinet & Glenn-Peter Sætre Oslo, October 2018
+## https://evolutionarygenetics.github.io/Chapter3.html
+
 ########
 
 p <- 0.8
@@ -49,6 +51,7 @@ a + theme_light() + theme(legend.position = "bottom")
 
 ########
 # All following code written by: Joey White
+# for CSCI 2897 final project
 ########
 
 #Inbreeding effects
@@ -122,14 +125,8 @@ for(i in 1:100){
 
 
 
-# pericarp <- read.csv("~/Documents/Lab Work/Pericarp/pericarp.csv")
-# pericarp <- (pericarp - pericarp$X.1)
-# 
-# pericarp <-pericarp[ , -which(names(pericarp) %in% c("X"))]
-# write.csv(pericarp , "~/Documents/Lab Work/Pericarp/pericarp_trimmed.csv", row.names=FALSE)
 
-
-pericarp <- read.csv("~/Documents/Lab Work/Pericarp/pericarp_trimmed.csv")
+pericarp <- read.csv("pericarp_trimmed.csv")
 
 # pericarp <- drop_na(pericarp)
 pericarp$mean14 <- as.double(pericarp$mean14)
